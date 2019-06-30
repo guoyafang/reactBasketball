@@ -9,7 +9,8 @@ class Home extends Component {
     this.state = {
       dataList: [],
       aaa: [],
-      bb: []
+        bb: [],
+      ccc:[],
     }
     axios.get('/data', { dataType: 'json' }).then(res => {
       this.setState({ dataList: res.data.list })
